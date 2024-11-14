@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Bohon - Patient Details</title>
+    <style>
+        /* Import a fancy Google font */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+        /* Basic styling */
+        body {
+            font-family: 'Playfair Display', serif; /* Fancy font */
+            background-color: #f0f4f3;
+            padding: 40px;
+            color: #333;
+        }
+
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .patient-details {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .patient-details img {
+            width: 150px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .patient-details p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .patient-details .info {
+            margin-bottom: 20px;
+        }
+
+        .patient-details .info span {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        /* Back link styling */
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+            display: block;
+            color: #2e8b57;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Matt Bohon - Patient Details</h1>
+    <div class="patient-details">
+        <img src="https://media.licdn.com/dms/image/v2/C4E03AQEKI7k-aKqn8g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516818108598?e=1736985600&v=beta&t=QGCLjPXIdO03DvPCVrRwfzbMx2FYlthZVqLNyFIa8Yo" alt="Matt Bohon"> <!-- Replace with actual image -->
+        
+        <!-- Date of Birth -->
+        <div class="info">
+            <p><span>Date of Birth:</span> March 7, 1965</p>
+        </div>
+
+        <!-- Medications Information -->
+        <div class="info">
+            <p><span>Medications:</span></p>
+            <ul>
+                <li><strong>Medication:</strong> Anti Sarcasim Medication<br>
+                    <strong>Dosage:</strong> 999 mg<br>
+                    <strong>Frequency:</strong> As needed
+                </li>
+                <li><strong>Medication:</strong> vitamin D<br>
+                    <strong>Dosage:</strong> 500 mg<br>
+                    <strong>Frequency:</strong> Twice daily
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="home.html" class="back-link">Back</a>
+
+</body>
+</html>

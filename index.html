@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi-list Login</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f4f3; /* Light greenish-white */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Header styling */
+        .header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Login container styling */
+        .login-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Input field styling */
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Login button styling */
+        .login-container input[type="submit"] {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #1d6d43; /* Darker green when hovered */
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Error message styling */
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Define the valid username and password
+            const validUsername = "doc";
+            const validPassword = "doc";
+
+            // Get the values entered by the user
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Check if the username and password are correct
+            if (username === validUsername && password === validPassword) {
+                window.location.href = "home.html"; // Redirect to home page
+            } else {
+                document.getElementById("error-message").innerText = "Invalid username or password. Please try again.";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header section -->
+    <div class="header">
+        <h1>Welcome to Medi-list</h1>
+        <p>Your Health, In Your Hands</p>
+    </div>
+
+    <!-- Login container -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="validateLogin(event)">
+            <input type="text" id="username" placeholder="Username" name="username" required>
+            <input type="password" id="password" placeholder="Password" name="password" required>
+            <input type="submit" value="Login">
+            <p id="error-message" class="error"></p>
+        </form>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <p>&copy; 2024 Medi-list Services Inc.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi-list</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f4f3; /* Light greenish-white */
+        }
+
+        /* Header styling */
+        .header {
+            background-color: #2e8b57; /* A green color typical for medical themes */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* To position the logout button */
+        }
+
+        /* Logout button styling */
+        .logout-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff4d4d; /* Red color for logout */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .logout-button:hover {
+            background-color: #e60000; /* Darker red on hover */
+        }
+
+        /* Main content styling */
+        .content {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white; /* White content background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Main text content */
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        /* Side section for creator pictures */
+        .creator-pictures {
+            flex: 1;
+            text-align: center;
+        }
+
+        .creator-pictures img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Link styling */
+        .patient-links, .about-us-links {
+            margin-top: 20px;
+        }
+
+        .patient-links a, .about-us-links a {
+            display: block;
+            margin: 10px 0;
+            color: #2e8b57;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .patient-links a:hover, .about-us-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section with logout button -->
+    <div class="header">
+        <h1>Welcome to Our Medi-list Website</h1>
+        <p>Your Health, In Your Hands</p>
+        <a href="index.html" class="logout-button">Logout</a>
+    </div>
+
+    <!-- Main content section -->
+    <div class="content">
+        <!-- Main text content -->
+        <div class="main-content">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the highest quality healthcare services with compassion and expertise.</p>
+
+            <!-- Links for About Us and Our Mission -->
+            <div class="about-us-links">
+                <h3>Learn More</h3>
+                <a href="about-us.html">About Us</a>
+                <a href="our-mission.html">Our Mission</a>
+            </div>
+
+            <h2>Our Services</h2>
+            <ul>
+                <li>Primary Care</li>
+                <li>Specialty Clinics</li>
+                <li>Emergency Services</li>
+                <li>Telemedicine</li>
+            </ul>
+
+            <!-- Links to patient lists -->
+            <div class="patient-links">
+                <h2>Patient Name</h2>
+                <p>Your Patients information is below!</p>
+                <a href="Matt-Bohon.html">Matt Bohon</a>
+            </div>
+        </div>
+
+        <!-- Side section for creator pictures -->
+        <div class="creator-pictures">
+            <h3>Medi-list Creators</h3>
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFxfGwOumEd6w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730391712369?e=2147483647&v=beta&t=8P-h6fzToeDB4xwRSYZnsR4JBNjB95SAvlGg7ltoMMM" alt="Ellis Mcgraw">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQEMPq5y7Hpsxg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722310808980?e=2147483647&v=beta&t=n2J0SdK4ajhmry5ay37hLuhYDnINWdk_h4ezWlxnqns" alt="Cayman Little">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEQMdLgod2dhw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721662879448?e=2147483647&v=beta&t=EQZSCQiJlEUCVPM5D-yVlvV-2NthnHij49K0HAmfG7E" alt="Denzel Campbell">
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <p>&copy; 2024 Medi-list Services Inc.</p>
+    </div>
+
+</body>
+</html>
